@@ -9,10 +9,43 @@ This project is a simple Node.js API that serves random jokes by fetching them f
 1. Clone the repository:
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/HariChandana2000/Random-Jokes-API-Node.git
    ```
 
 2. Navigate to the project directory:
+
    ```bash
-   cd random-jokes-api
+   cd Random-Jokes-API-Node
    ```
+
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+## Running the Server
+
+Start the server by running:
+
+```bash
+node index.js
+```
+
+The server will start on port 3000 (or the port specified in the environment variables).
+
+## API Endpoints
+
+### GET /api/jokes/random
+
+Returns a random joke fetched from the Official Joke API.
+
+#### Example Response
+
+```json
+{
+  "id": 100,
+  "type": "general",
+  "setup": "Why did the scarecrow win an award?",
+  "punchline": "Because he was outstanding in his field!"
+}
+```
